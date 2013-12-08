@@ -16,6 +16,16 @@ $(document).ready(function() {
     });
 
 
+    var ua = navigator.userAgent.toLowerCase();
+
+    if(ua.match(/iphone|ipod|ipad/i)){
+        // iOS does not support background-attachment:fixed
+        // therefore patch those background images
+        $('#features-banner').backstretch("/images/header-bg-2.jpg");
+        $('#support-banner').backstretch("/images/header-bg-3.jpg");
+        $('#contact-background').backstretch("/images/header-bg-contact.jpg");
+    }
+
 
 
 
