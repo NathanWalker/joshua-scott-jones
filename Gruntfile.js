@@ -120,32 +120,6 @@ module.exports = function (grunt) {
                 ignorePath: '<%= yeoman.app %>/'
             }
         },
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        '<%= yeoman.dist %>/js/{,*/}*.js',
-                        '<%= yeoman.dist %>/css/{,*/}*.css',
-                        '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/img/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/fonts/{,*/}*.*'
-                    ]
-                }
-            }
-        },
-        useminPrepare: {
-            options: {
-                dest: '<%= yeoman.dist %>'
-            },
-            html: '<%= yeoman.app %>/index.html'
-        },
-        usemin: {
-            options: {
-                assetsDirs: ['<%= yeoman.dist %>']
-            },
-            html: ['<%= yeoman.dist %>/{,*/}*.html'],
-            css: ['<%= yeoman.dist %>/css/{,*/}*.css']
-        },
         imagemin: {
             dist: {
                 files: [{
@@ -214,9 +188,11 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
-                        'images/{,*/}*.{webp,gif,jpg,png}',
-                        'fonts/{,*/}*.*',
-                        'img/{,*/}*.{webp,gif,jpg,png}',
+                        'images/**/*',
+                        'fonts/**/*',
+                        'img/**/*',
+                        'css/**/*',
+                        'js/**/*'
                     ]
                 }]
             },
@@ -273,14 +249,11 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
         // 'cssmin',
         // 'uglify',
-        'copy:dist',
-        'rev',
-        'usemin'
+        'copy:dist'
     ]);
 
     grunt.registerTask('default', [
