@@ -36,56 +36,20 @@
 
     <body>
 
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1438220513058748";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
         <div class="navbar-wrapper">
             <div class="navbar navbar-fixed-top" id="navigation">
                 <div class="navbar-inner">
                     <div class="container">
-                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
                         <a class="brand" href="#">  <img src="images/jsj-logo.png" id="logokhan"></a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav pull-right">
-
-                                <li class="active">
-                                    <a href="#top">Home</a>
-
-                                </li>
-                                <li class="">
-                                    <a href="#support">Biography</a>
-                                </li>
-                                <li class="">
-                                    <a href="#portfolio">Photos</a>
-                                </li>
-                                <!-- <li class="">
-                                    <a href="#testimonials">Testimonials</a>
-                                </li> -->
-
-                                <li class="">
-                                    <a href="#contact">Contact</a>
-                                </li>
-                                <!-- <li class="">
-                                    <a data-toggle="modal" href="#myModal" class="">Sign Up</a>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Sign In <b class="caret"></b></a>
-                                    <div class="dropdown-menu" style="padding: 15px;">
-                                        <form action="#" method="post" accept-charset="UTF-8" class="form-menu">
-                                            <input id="user_username"  type="text" name="user[username]" size="33" placeholder="Username" />
-                                            <input id="user_password"  type="password" name="user[password]" size="33" placeholder="Password" />
-                                            <label class="checkbox muted hidden-tablet"><input type="checkbox"> Remember Me</label>
-                                            <input class="btn span3"  type="submit" name="commit" value="Sign In" />
-                                        </form>
-
-                                    </div>
-                                </li> -->
-
-
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -108,6 +72,7 @@
                                 <div class="span6 splash-video-right-col animated faster fadeInLeftBig" id="main-media">
                                     <!-- <iframe src="http://player.vimeo.com/video/56072786" width="580" height="240" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
                                     <iframe width="720" height="420" src="http://www.youtube.com/embed/z_lwocmL9dQ" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
                                 </div>
 
 
@@ -131,349 +96,40 @@
 
                     </div>
 
-                    <div class="social-header hidden-phone">
 
-                        <a href="https://twitter.com/joshscottjones" class="social-network sn3 twitter" target="_blank"></a>
-                        <a href="https://www.facebook.com/JoshuaScottJonesMusic" class="social-network sn3 facebook" target="_blank"></a>
-                        <!-- <a href="#" class="social-network sn3 google" target="_blank"></a> -->
-                        <a href="http://www.flickr.com/search/?q=joshua%20scott%20jones" class="social-network sn3 flickr" target="_blank"></a>
-                        <a href="https://itunes.apple.com/us/album/steel-magnolia/id409011360" class="social-network sn3 itunes" target="_blank"></a>
-                        <a href="https://myspace.com/joshuascottjonesmusic" class="social-network sn3 myspace" target="_blank"></a>
-                        <a href="http://www.last.fm/music/Joshua+Scott+Jones" class="social-network sn3 lastfm" target="_blank"></a>
+
+                    <div class="social-header">
+
+                        <div class="fb-like" style="display:block; background-color:rgba(0,0,0,.2); padding:5px; padding-bottom:0px; border-radius:6px" data-href="https://www.facebook.com/JoshuaScottJonesMusic" data-width="100px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+                        <div class="hidden-phone" style="display:none">
+                            <a href="https://twitter.com/joshscottjones" class="social-network sn3 twitter" target="_blank"></a>
+                            <a href="https://www.facebook.com/JoshuaScottJonesMusic" class="social-network sn3 facebook" target="_blank"></a>
+                            <a href="http://www.flickr.com/search/?q=joshua%20scott%20jones" class="social-network sn3 flickr" target="_blank"></a>
+                            <a href="https://itunes.apple.com/us/album/steel-magnolia/id409011360" class="social-network sn3 itunes" target="_blank"></a>
+                            <!-- <a href="https://myspace.com/joshuascottjonesmusic" class="social-network sn3 myspace" target="_blank"></a> -->
+                            <a href="http://www.last.fm/music/Joshua+Scott+Jones" class="social-network sn3 lastfm" target="_blank"></a>
+                        </div>
 
                     </div>
 
                 </div>
 
 
-                <div id="home-arrow" class="hidden-phone">
+                <!-- <div id="home-arrow" class="hidden-phone">
 
-                    <a href="#features"><i class="fa fa-angle-double-down fa-3x" id="iconHome"></i></a>
+                    <a href="#features"  ><i class="fa fa-angle-double-down fa-3x" id="iconHome"></i></a>
 
-                </div>
+                </div> -->
             </header>
 
 
-            <section id="features">
 
-                <div id="features-banner" data-stellar-background-ratio="0">
 
-                    <h1>Joshua Scott Jones</h1>
-                    <p class="sub-heading-support">One half of country duo Steel Magnolia</p>
-                </div>
 
-                <div class="container">
 
-                    <hr class="line" style="border-color:#fff">
-                    <div class="row">
-                        <div class="span12">
-                            <ul class="thumbnails">
-                                <li class="span3">
 
-                                    <div class="thumbnail border-left features">
-                                        <div class="feature-icon">
-                                            <i class="fa fa-music icon-10x color1"></i>
-                                        </div>
-                                        <h4>Live Music</h4>
 
-                                        <!-- <p>text</p> -->
-                                    </div>
-                                </li>
-                                <li class="span3">
-
-                                    <div class="thumbnail border-none">
-                                        <div class="feature-icon">
-                                            <i class="fa fa-bolt icon-10x color2"></i>
-                                        </div>
-                                        <h4>Guitarist</h4>
-
-                                        <!-- <p>text</p> -->
-                                    </div>
-                                </li>
-                                <li class="span3">
-
-                                    <div class="thumbnail border-right">
-                                        <div class="feature-icon">
-                                            <i class="fa fa-microphone icon-10x color3"></i>
-                                        </div>
-                                        <h4>Singer</h4>
-                                        <!-- <p>text</p> -->
-                                    </div>
-                                </li>
-                                <li class="span3">
-
-                                    <div class="thumbnail border-right">
-                                        <div class="feature-icon">
-                                            <i class="fa fa-star icon-10x color4"></i>
-                                        </div>
-                                        <h4>Entertainer</h4>
-                                        <!-- <p>text</p> -->
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-            </section>
-
-            <section id="support">
-                <div id="support-banner" data-stellar-background-ratio="0.5">
-
-                    <div id="carousel_fade_1" class="carousel slide carousel-fade">
-
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <h1><i class="icon-comments"></i> Born in Houston</h1>
-                                <p class="sub-heading-support">But raised by an adoptive family in rural Illinois, his father was a factory worker on weekdays and a minister on Sundays.</p>
-
-
-                            </div>
-                            <div class="item">
-                                <h1><i class="icon-double-angle-up"></i> Country Rock</h1>
-                                <p class="sub-heading-support">At home Josh heard his folks' classic country music and his older brother's rock and roll explorations.</p>
-                            </div>
-                            <div class="item">
-                                <h1><i class="icon-desktop"></i> The rest came at church</h1>
-                                <p class="sub-heading-support">My family ended up going to an all black church called Second Baptist when I was 13, so I got immersed in the stomp.</p>
-
-                            </div>
-
-                        </div>
-                        <button class="carousel-control left car-button" href="#carousel_fade_1" data-slide="prev"><i class="fa fa-chevron-left"></i></button>
-                        <button class="carousel-control right car-button" href="#carousel_fade_1" data-slide="next"><i class="fa fa-chevron-right"></i></button>
-
-                    </div>
-                </div>
-
-            </section>
-
-
-
-            <section class="portfolio home-portfolio">
-
-                <div class="container" id="portfolio">
-
-                    <div class="row">
-                        <div class="span12 center">
-                            <h1 class="big-heading">Photos</h1>
-                            <h4 class="sub-heading"></h4>
-
-                        </div>
-
-
-                    </div>
-                    <div class="row">
-                        <div class="span12">
-                            <div id="filters_container">
-                                <ul id="filters">
-                                    <li><a href="#" data-filter="*" class="active">All</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="#" data-filter=".perf">Performance</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="#" data-filter=".port">Portrait</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" id="portfolio-container">
-                        <div class="span3 project port">
-
-                            <img src="images/photos/300x300.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/300x300.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="span3 project perf">
-
-                            <img src="images/photos/212360b0de7295cfa0da605114ff4bbf.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/212360b0de7295cfa0da605114ff4bbf.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-                        <div class="span3 project port">
-
-                            <img src="images/photos/1073778_450_height_a69862.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/1073778_450_height_a69862.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-                        <div class="span3 project port">
-
-                            <img src="images/photos/1073779_450_height_72fbdc.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/1073779_450_height_72fbdc.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-                        <div class="span3 project port">
-
-                            <img src="images/photos/1073780_450_height_846c71.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/1073780_450_height_846c71.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-                        <div class="span3 project port">
-
-                            <img src="images/photos/1073790_450_height_cfdd9e.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/1073790_450_height_cfdd9e.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-                        <div class="span3 project port">
-
-                            <img src="images/photos/1073791_450_height_c430cf.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/1073791_450_height_c430cf.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-                        <div class="span3 project port">
-
-                            <img src="images/photos/1073792_450_height_a8703e.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/1073792_450_height_a8703e.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-                        <div class="span3 project perf">
-
-                            <img src="images/photos/113295315_10007_i.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/113295315_10007_i.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-                        <div class="span3 project perf">
-
-                            <img src="images/photos/10-x600.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/10-x600.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-                        <div class="span3 project perf">
-
-                            <img src="images/photos/josh-opry.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/josh-opry.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-                        <div class="span3 project perf">
-
-                            <img src="images/photos/josh-stage.jpg" alt="" class="project-img">
-                            <span class="overlay"></span>
-                            <div class="cnt">
-                                <a href="images/photos/josh-stage.jpg" target="_blank" class="btn btn-normal fa fa-download" data-title-id="title-01" rel="portfolio">Download</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-
-
-
-
-            <section id="call-to-action">
-
-                <div class="call-to-action-link">
-                    <a href="https://itunes.apple.com/us/album/steel-magnolia/id409011360" target="_blank" class="fa fa-music"><span>Buy on iTunes Now →</span></a>
-                </div>
-
-            </section>
-
-
-            <section id="contact">
-                <div id="contact-background" data-stellar-background-ratio="0">
-
-                    <h1>Contact</h1>
-                    <p class="sub-heading-contact">Book your event now</p>
-                </div>
-                <div class="container">
-                    <div class="row margintop20">
-
-
-                        <div class="span6">
-                            <h2 class="big-h2-heading"><i class="icon-envelope-alt"></i> Contact</h2>
-                            <p>Chris Vetrano will be in touch with you soon.</p>
-                            <form class="form-main">
-
-                                <fieldset>
-                                    <div class="clearfix">
-                                        <label for="name"><span>Name:</span></label>
-                                        <div class="input">
-                                            <input id="name" name="name" type="text" value="" class="input-xlarge">
-
-                                        </div>
-
-
-                                    </div>
-
-                                    <div class="clearfix">
-                                        <label for="email"><span>Email:</span></label>
-                                        <div class="input">
-                                            <input id="email" name="email" type="text" value="" class="input-xlarge">
-                                        </div>
-                                    </div>
-
-                                    <div class="clearfix">
-                                        <label for="message"><span>Message:</span></label>
-                                        <div class="input">
-                                            <textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="actions">
-                                        <button tabindex="3" type="submit" class="btn btn-landing">Send</button>
-                                    </div>
-                                </fieldset>
-
-                            </form>
-                        </div>
-                        <div class="span5 offset1">
-                            <img style="margin: 60px auto 0; display: block" src="images/portrait-josh.jpg" alt="Joshua Scott Jones">
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </section>
 
 
         </div>
@@ -489,17 +145,15 @@
                             © 2013-2014 JSJ Music, Ltd. All Rights Reserved.
                         </p>
                     </div>
-                    <div class="span2">
+                    <!-- <div class="span2">
                         <h2>links </h2>
                         <ul class="unstyled footer-links">
                             <li><a href="#top" class="flink">Home</a></li>
                             <li><a href="#support" class="flink">Biography</a></li>
                             <li><a href="#portfolio" class="flink">Photos</a></li>
                             <li><a href="#contact" class="flink">Contact</a></li>
-                            <!-- <li><a href="#" class="flink">Privacy Policy</a></li>
-                            <li><a href="#" class="flink">Terms of Use</a></li> -->
                         </ul>
-                    </div>
+                    </div> -->
 
                     <div class="span3">
                         <h2>subscribe </h2>
@@ -509,7 +163,7 @@
                         <!-- <a href="#" class="social-network sn3 google" target="_blank"></a> -->
                         <a href="http://www.flickr.com/search/?q=joshua%20scott%20jones" class="social-network sn3 flickr" target="_blank"></a>
                         <a href="https://itunes.apple.com/us/album/steel-magnolia/id409011360" class="social-network sn3 itunes" target="_blank"></a>
-                        <a href="https://myspace.com/joshuascottjonesmusic" class="social-network sn3 myspace" target="_blank"></a>
+                        <!-- <a href="https://myspace.com/joshuascottjonesmusic" class="social-network sn3 myspace" target="_blank"></a> -->
                         <a href="http://www.last.fm/music/Joshua+Scott+Jones" class="social-network sn3 lastfm" target="_blank"></a>
 
                     </div>
