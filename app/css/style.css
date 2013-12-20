@@ -1,5 +1,55 @@
 @import url(fancybox.css);
 
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('MonoSocialIconsFont-1.10.eot');
+    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
+iframe.twitter-timeline {
+    margin-top:15px;
+    opacity:.8;
+}
+
+.fb_edge_widget_with_comment {
+    display:inline-block !important;
+    position: absolute !important;
+    bottom: 15px;
+    right: 15px;
+}
+
+#countdown {
+    position: absolute;
+    top:15px;
+    right:15px;
+}
+
 /*
 
 **********************************************************
@@ -11,6 +61,7 @@ COMPANY WEBSITE: http:uexel.com
 SUPPORT EMAIL: info@uexel.com
 FREELANCING : info@uexel.com
 **********************************************************
+
 
 
 */
@@ -184,6 +235,10 @@ html,body {
 /*General Items CSS*/
 #main-media {
     padding-bottom:10px;
+    top: 60px;
+    position: relative;
+    z-index: 10000;
+    left: 15px;
 }
 
 section {
@@ -192,7 +247,8 @@ section {
 
 header {
     /*background:url(../images/header2.jpg) no-repeat fixed #020202;*/
-    background:url(../images/header-bg-main.jpg) no-repeat fixed #020202;
+    /*background:url(../images/header-bg-main.jpg) no-repeat fixed #020202;*/
+    background:url(../images/header-bg-main-hr.jpg) no-repeat right top #020202;
     padding-top:10px;
 }
 
@@ -371,10 +427,6 @@ h2.big-h2-heading {
     font-size:50px;
 }
 
-footer img {
-    height:50px;
-}
-
 #scroll-to-top {
     position:fixed;
     bottom:0;
@@ -427,6 +479,10 @@ footer img {
 
 #footer a:hover {
     color:#fff;
+}
+
+#footer .symbol {
+    font-size: 35px;
 }
 
 /* News
