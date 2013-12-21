@@ -239,11 +239,11 @@ html,body {
     position: relative;
     z-index: 10000;
     left: 15px;
-    -webkit-transition:width .5s ease-in-out;
-    -moz-transition:width .5s ease-in-out;
-    -ms-transition:width .5s ease-in-out;
-    -o-transition:width .5s ease-in-out;
-    transition:width .5s ease-in-out;
+    -webkit-transition:width .5s ease-in-out, left .5s ease-in-out, top .5s ease-in-out;
+    -moz-transition:width .5s ease-in-out, left .5s ease-in-out, top .5s ease-in-out;
+    -ms-transition:width .5s ease-in-out, left .5s ease-in-out, top .5s ease-in-out;
+    -o-transition:width .5s ease-in-out, left .5s ease-in-out, top .5s ease-in-out;
+    transition:width .5s ease-in-out, left .5s ease-in-out, top .5s ease-in-out;
 }
 
 section {

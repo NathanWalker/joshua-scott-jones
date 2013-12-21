@@ -7,12 +7,12 @@
 */
 
 /* Large desktop */
-@media (min-width:1530px) {
+@media (min-width:1609px) {
 
     #main-media {
         width:970px;
-        top: 118px;
-        left: 56px;
+        top: 54px;
+        left: 106px;
     }
 
     iframe.twitter-timeline {
@@ -20,12 +20,12 @@
     }
 
 }
-@media (min-width: 1430px) and (max-width:1529px) {
+@media (min-width: 1536px) and (max-width:1608px) {
 
     #main-media {
-        width: 770px;
-        left: 168px;
-        top: 238px;
+        width: 856px;
+        top: 95px;
+        left: 151px;
     }
 
     iframe.twitter-timeline {
@@ -33,11 +33,12 @@
     }
 
 }
-@media (min-width: 1330px) and (max-width: 1429px) {
+@media (min-width: 1430px) and (max-width: 1535px) {
 
     #main-media {
-        width: 720px;
-        left: 115px;
+        width: 750px;
+        top: 140px;
+        left: 151px;
     }
 
     iframe.twitter-timeline {
@@ -45,10 +46,12 @@
     }
 
 }
-@media (min-width: 1200px) and (max-width: 1329px) {
+@media (min-width: 1295px) and (max-width: 1429px) {
 
     #main-media {
-        width:708px;
+        width: 708px;
+        top: 150px;
+        left: 55px;
     }
 
     iframe.twitter-timeline {
@@ -56,10 +59,25 @@
     }
 
 }
-@media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 1226px) and (max-width: 1294px) {
 
     #main-media {
-        width:655px;
+        width: 635px;
+        top: 180px;
+        left: 60px;
+    }
+
+    iframe.twitter-timeline {
+        width:470px;
+    }
+
+}
+
+@media (min-width: 980px) and (max-width: 1225px) {
+
+    #main-media {
+        width: 622px;
+        top: 230px;
     }
 
     iframe.twitter-timeline {
