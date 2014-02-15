@@ -238,7 +238,7 @@
         width:292px;
     }
     #wrap {margin-top: -105px;}
-    .navbar-wrapper {position:relative;}
+    .navbar-wrapper {position:relative;z-index:100;}
     iframe.twitter-timeline {
         width:292px;
         height:250px;

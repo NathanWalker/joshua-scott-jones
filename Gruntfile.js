@@ -191,8 +191,7 @@ module.exports = function (grunt) {
                         'images/**/*',
                         'fonts/**/*',
                         'img/**/*',
-                        'css/**/*',
-                        'js/**/*'
+                        'css/**/*'
                     ]
                 }]
             },
@@ -217,12 +216,37 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        uglify: {
+          dist: {
+            src: [
+                "app/js/jquery.js",
+                "app/js/modernizr.js",
+                "app/js/bootstrap.js",
+                "app/js/jquery.fitvids.js",
+                "app/js/jquery.easing.1.3.js",
+                "app/js/twitter.js",
+                "app/js/jquery.fancybox.pack.js",
+                "app/js/jquery.fancybox-thumbs.js?v=1.0.2",
+                "app/js/jquery.fancybox-media.js?v=1.0.0",
+                "app/js/stellar.js",
+                "app/js/nicescroll.min.js",
+                "app/js/jquery.isotope.min.js",
+                "app/js/custom.js",
+                "app/js/custom-home.js",
+                "app/js/portfolio.js",
+                "app/js/jquery.flexslider.js",
+                "app/js/retina.js",
+                "app/js/jquery.backstretch.min.js"
+            ],
+            dest: "dist/js/jsj.min.js"
+          }
         }
     });
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
-            return grunt.task.run(['build', 'connect:dist:keepalive']);
+            return grunt.task.run(['connect:dist:keepalive']);
         }
 
         grunt.task.run([
@@ -253,7 +277,8 @@ module.exports = function (grunt) {
         'autoprefixer',
         // 'cssmin',
         // 'uglify',
-        'copy:dist'
+        'copy:dist',
+        'uglify:dist'
     ]);
 
     grunt.registerTask('default', [

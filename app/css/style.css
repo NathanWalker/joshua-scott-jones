@@ -12,6 +12,22 @@
     font-style: normal;
 }
 
+.tour-link {
+    font-size:45px !important;
+    color: #efefef !important;
+}
+
+.tour-link:hover {
+    color: #fff !important;
+}
+
+.fb_iframe_widget {
+    position: absolute !important;
+    bottom: 6px;
+    right: 18px;
+    width:auto !important;
+}
+
 .symbol, a.symbol:before {
     font-family: 'Mono Social Icons Font';
     -webkit-text-rendering: optimizeLegibility;
@@ -255,6 +271,7 @@ header {
     /*background:url(../images/header-bg-main.jpg) no-repeat fixed #020202;*/
     background:url(../images/header-bg-main-hr.jpg) no-repeat right top #020202;
     padding-top:10px;
+    position: relative;
 }
 
 .btn-landing {
