@@ -251,7 +251,7 @@ html,body {
 /*General Items CSS*/
 #main-media {
     padding-bottom:10px;
-    top: 248px;
+    top: 200px;
     position: relative;
     z-index: 10000;
     left: 15px;

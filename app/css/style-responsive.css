@@ -243,10 +243,11 @@
         width:292px;
         height:250px;
     }
-    .fb_edge_widget_with_comment {
-        bottom:48px;
+    .fb_iframe_widget {
+        bottom:-8px;
         right: 12px;
         width: 282px;
+        z-index:1000000;
     }
     #footer {
         padding-top:22px;
@@ -289,8 +290,8 @@
     #main-media {
         top:210px;
     }
-    .fb_edge_widget_with_comment {
-        bottom:-85px;
+    .fb_iframe_widget {
+        bottom:-110px;
         z-index:100000;
     }
     iframe.twitter-timeline {
